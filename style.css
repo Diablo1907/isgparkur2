@@ -1,0 +1,241 @@
+.submit-btn {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    background: linear-gradient(90deg, #007bff 0%, #40e0d0 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    transition: background 0.3s, color 0.3s;
+    opacity: 1;
+}
+.submit-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+.option-btn.selected {
+    font-weight: bold;
+    box-shadow: 0 0 0 2px #007bff;
+    background: linear-gradient(90deg, #e0f7fa 0%, #fceabb 100%);
+    color: #007bff;
+}
+.option-btn.correct {
+    background: linear-gradient(90deg, #28a745 0%, #a8e063 100%);
+    color: #fff;
+    font-weight: bold;
+}
+.option-btn.wrong {
+    background: linear-gradient(90deg, #dc3545 0%, #ff6f6f 100%);
+    color: #fff;
+    font-weight: bold;
+}
+.disabled-next {
+    opacity: 0.5;
+    pointer-events: none;
+}
+body {
+    font-family: 'Comic Sans MS', 'Comic Sans', 'Chalkboard SE', 'Comic Neue', cursive, sans-serif;
+    background-color: #add8e6; /* Açık mavi */
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-container {
+    background: linear-gradient(135deg, #e0f7fa 0%, #fceabb 100%, #f8b500 80%, #f8b500 100%);
+    padding: 36px 30px 30px 30px;
+    border-radius: 24px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+    width: 100%;
+    max-width: 540px;
+    text-align: center;
+    border: 2px solid #fffbe0;
+    position: relative;
+    transition: box-shadow 0.3s, background 0.3s;
+    margin: auto;
+}
+.celebration-message {
+    background: linear-gradient(90deg,#e0ffe0,#e0f7ff,#fffbe0);
+    color: #d7263d;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+    letter-spacing: 1px;
+    border: 2px solid #d7263d;
+}
+.celebration-message.big {
+    font-size: 2.2rem;
+    .option-btn {
+        padding: 15px;
+        font-size: 1rem;
+        border: 1px solid #f8b500;
+        border-radius: 8px;
+        background: linear-gradient(90deg, #fceabb 0%, #e0f7fa 100%);
+        cursor: pointer;
+        transition: background 0.3s, color 0.3s;
+    }
+    color: #007bff;
+    margin-bottom: 8px;
+.login-container {
+    background: linear-gradient(120deg, #fceabb 0%, #e0f7fa 100%, #f8b500 80%);
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.13);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    border: 2px solid #f8b500;
+}
+        background: linear-gradient(90deg, #28a745 0%, #a8e063 100%);
+        color: #fff;
+    }
+.result-container {
+    padding: 20px;
+    background: linear-gradient(120deg, #e0f7fa 0%, #fceabb 100%, #f8b500 80%);
+    border-radius: 18px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+    border: 2px solid #f8b500;
+}
+         background: linear-gradient(120deg, #e0f7fa 0%, #fceabb 100%, #f8b500 80%);
+         border-radius: 18px;
+         box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+.leaderboard {
+    margin-top: 20px;
+    background: linear-gradient(90deg, #e0f7fa 0%, #fceabb 100%, #f8b500 80%);
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    padding: 15px;
+    text-align: left;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #f8b500;
+}
+         border: 2px solid #f8b500;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+    width: 92%;
+    max-width: 540px;
+    text-align: center;
+    border: 2px solid #fffbe0;
+    position: relative;
+         border: 1px solid #f8b500;
+#login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #f8b500;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, #e0f7fa 0%, #fceabb 100%);
+}
+    margin-bottom: 16px;
+    display: inline-block;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    color: #333;
+         font-weight: bold;
+         box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+         transition: background 0.3s, color 0.3s;
+}
+h1 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+#quiz {
+    display: flex;
+    flex-direction: column;
+}
+
+#question {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.options-container {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.option-btn {
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #fceabb 0%, #e0f7fa 100%);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.option-btn:hover {
+    background: linear-gradient(90deg, #f8b500 0%, #fceabb 100%);
+}
+
+.option-btn.correct {
+    background-color: #28a745;
+    color: white;
+}
+
+.option-btn.wrong {
+    background-color: #dc3545;
+    color: white;
+}
+
+.next-btn, .restart-btn {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.result-container {
+    padding: 20px;
+}
+.login-container {
+    background: linear-gradient(120deg, #fceabb 0%, #e0f7fa 100%, #f8b500 80%);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+#login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Padding ve border'ın genişliğe dahil olmasını sağlar */
+}
+
+#login-btn {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+/* Quiz ve login görünürlüğü JS ile kontrol edilecek, başlangıçta HTML'den ayarlandı */

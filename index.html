@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İSG Bilgi Yarışması</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div id="login-container" class="login-container" style="display:block;">
+            <h2>Sicil Numaranız</h2>
+            <form id="login-form">
+                <input type="text" id="sicil-no" placeholder="Sicil Numaranızı Girin" required>
+                <button type="submit" id="login-btn">Giriş Yap</button>
+            </form>
+            <p id="error-message" class="error-message"></p>
+        </div>
+        <div id="quiz" style="display:none;">
+            <h1>İSG Bilgi Yarışması</h1>
+            <div id="question-progress" class="question-progress"></div>
+            <h2 id="question">Soru metni buraya gelecek</h2>
+            <div id="options-container" class="options-container"></div>
+            <button id="submit-btn" class="submit-btn" disabled>Yanıt Ver</button>
+            <button id="next-btn" class="next-btn">Sonraki Soru</button>
+        </div>
+        <div id="result-container" class="result-container" style="display:none;">
+            <h2>Yarışma Bitti!</h2>
+            <p id="score-text">Skorunuz: 0</p>
+            <div id="celebration" class="celebration"></div>
+            <canvas id="confetti-canvas" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:9998;pointer-events:none;"></canvas>
+            <canvas id="fireworks-canvas" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:9999;pointer-events:none;"></canvas>
+            <div id="leaderboard" class="leaderboard"></div>
+            <button id="restart-btn" class="restart-btn">Tekrar Oyna</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
